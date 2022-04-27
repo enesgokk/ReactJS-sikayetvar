@@ -9,12 +9,16 @@ import {
 import HomePage from './pages/HomePage';
 import PostDetails from './pages/PostDetails';
 import UserDetails from './pages/userDetail.js/UserDetails';
+import Pay from './pages/Pay';
+import Success from './pages/Success';
 
 const Root = () => (
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route path="/post/:id/" component={PostDetails} />
       <Route path="/profile/:id/" component={UserDetails} />
+      <Route path="/pay" component={Pay} />
+      <Route path="/success" component={Success} />
     </Switch>
 );
 
