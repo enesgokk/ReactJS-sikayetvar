@@ -24,7 +24,7 @@ const HomeList = ({ allPosts }) => {
               </div>
               <div className="flex">
                 <Link to={{ pathname: `/post/${posts.id}` }}>
-                  <button className="bg-indigo-600 text-white py-3 px-4 rounded-md text-xs font-medium">
+                  <button data-testid="detayBtn" className="bg-indigo-600 text-white py-3 px-4 rounded-md text-xs font-medium">
                     DETAY
                   </button>
                 </Link>
